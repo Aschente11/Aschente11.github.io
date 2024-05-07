@@ -174,15 +174,12 @@ nav.sticky .menu-btn{
 section{
   padding-top: 40px;
   background-color: #dcb37b;
+  padding-bottom: 40px;
 }
 section .content{
   width: 80%;
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
-}
-.about{
-  height: 50vh;
-  width: 100%;
 }
 .about .about-details{
   width: 90%;
@@ -280,9 +277,15 @@ section .topic{
     color: #fff;
   }
 
+  .skills span{
+    text-decoration:underline;
+  }
+
+  
+
  /* projects CSS */
  .projects{
-   background: #faf0d9;
+   background: #dcb37b;
  }
 
 

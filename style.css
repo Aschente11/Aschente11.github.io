@@ -180,10 +180,19 @@ section .content{
   margin: 40px auto;
   font-family: 'Poppins', sans-serif;
 }
+.about{
+  height: 50vh;
+  width: 100%;
+}
 .about .about-details{
-  display: flex;
-  justify-content: space-between;
+  width: 90%;
+  height: 100%;
   align-items: center;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 section .title{
   display: flex;
@@ -213,48 +222,18 @@ section .title span::after{
   left: 50%;
   transform: translateX(-50%);
 }
-.about .about-details .left{
-  width: 45%;
-}
-.about .left img{
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-.about-details .right{
-  width: 55%;
-}
-section  .topic{
+
+section .topic{
   color: #38220f;
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 10px;
+  
 }
-.about-details .right p{
-  text-align: justify;
-  color: #38220f;
-}
+
 section .button{
   margin: 16px 0;
 }
-section .button button{
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 25px;
-  font-weight: 400;
-  background: #38220f;
-  color: #fff;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-section .button button:hover{
-  border-color: #38220f;
-  background-color: #fff;
-  color: #38220f;
-}
+
 
 /* Skills CSS */
 .skills{

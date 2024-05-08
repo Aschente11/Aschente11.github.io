@@ -353,10 +353,11 @@ section .topic{
 /* Contact Me CSS */
 .contact{
   background: #faf0d9;
+  padding: 5% 10%;
+  text-align: center;
 }
 .contact .content{
   margin: 0 auto;
-  padding: 30px 0;
 }
 .contact .text{
   width: 80%;

@@ -246,7 +246,7 @@ section .topic{
  }
 
  .projects .media-scroller{
-  --spacer:1rem;
+  --spacer:3rem;
   display:grid;
   gap: var(--spacer);
   grid-auto-flow: column;
@@ -269,7 +269,7 @@ section .topic{
 
  .projects .media-element > img{
   inline-size: 100%;
-  aspect-ratio: 8/9;
+  aspect-ratio: 10/10;
   object-fit: cover;
  }
 

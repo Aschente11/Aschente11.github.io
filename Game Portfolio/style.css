@@ -112,7 +112,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background-image: url("/images/HomepageBG.png");
+  background-image: url("/images/GamepageBG.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -174,7 +174,7 @@ nav.sticky .menu-btn{
 section{
   padding-top: 40px;
   background-color: #dcb37b;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 section .content{
   width: 80%;
@@ -226,61 +226,6 @@ section .topic{
   font-weight: 500;
   
 }
-
-
-/* Skills CSS */
-.skills{
-    background: #faf0d9;
-}
-.skills .boxes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .skills .boxes .box{
-    margin: 20px 0;
-    width: calc(100% / 3 - 20px);
-    text-align: center;
-    border-radius: 12px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-    cursor: default;
-    transition: all 0.4s ease;
-  }
-  .skills .boxes .box:hover{
-    background: #dcb37b;
-    color: #fff;
-  }
-  .skills .boxes .box .icon{
-    height: 50px;
-    width: 50px;
-    background: #dcb37b;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 18px;
-    color: #fff;
-    margin: 0 auto 10px auto;
-    transition: all 0.4s ease;
-  }
-  .boxes .box:hover .icon{
-    background-color: #fff;
-    color: #dcb37b;
-  }
-  .skills .boxes .box:hover .topic,
-  .skills .boxes .box:hover p{
-    color: #0E2431;
-    transition: all 0.4s ease;
-  }
-  .skills .boxes .box:hover .topic,
-  .skills .boxes .box:hover p{
-    color: #fff;
-  }
-
-  .skills span{
-    text-decoration:underline;
-  }
-
   
 
  /* projects CSS */
@@ -288,12 +233,17 @@ section .topic{
    background: #dcb37b;
  }
 
- .projects .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: center; 
-}
+ .projects .project-details{
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+ }
 
  .projects .media-scroller{
   --spacer:1rem;
@@ -302,6 +252,7 @@ section .topic{
   grid-auto-flow: column;
   grid-auto-columns: 40%;
   padding: 0 var(--spacer) var(--spacer);
+
   overflow-x: auto;
   overscroll-behavior-inline: contain;
  }
@@ -331,38 +282,17 @@ section .topic{
   scroll-snap-align: start;
  }
 
- .projects .button {
-  margin: 14px 0;
-  width: 300px;
-  outline: none;
-  border-radius: 6px;
-  font-size: 17px;
-  font-weight: 400;
-  background: #38220f;
-  color: #FFF;
-  cursor: pointer;
-  border: 2px solid transparent;
-  transition: all 0.4s ease;
-}
-.projects .button:hover {
-  border-color: #dcb37b;
-  background-color: #fff;
-  color: #dcb37b;
-}
-
-/* Contact Me CSS */
-.contact{
-  background: #faf0d9;
-}
-.contact .content{
-  margin: 0 auto;
-  padding: 30px 0;
-}
-.contact .text{
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
+ #worderland {
+    background: #dcb37b; /* Your desired background color for Worderland Valley */
+  }
+  
+  #snakez {
+    background: #abcdef; /* Your desired background color for Snakez */
+  }
+  
+  #tekken {
+    background: #fedcba; /* Your desired background color for Tekken Shmup */
+  }
 
 /* Scroll TO Top Button CSS */
 .scroll-button a{

@@ -312,7 +312,6 @@ section .topic{
 
  .projects .media-element > img{
   inline-size: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
  }
 

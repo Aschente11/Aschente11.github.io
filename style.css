@@ -288,6 +288,42 @@ section .topic{
    background: #dcb37b;
  }
 
+ .projects .media-scroller{
+  --spacer:1rem;
+  display:grid;
+  gap: var(--spacer);
+  grid-auto-flow: column;
+  grid-auto-columns: 40%;
+  padding: 0 var(--spacer) var(--spacer);
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+ }
+
+ .projects .media-element{
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--spacer);
+  padding: var(--size-3);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-2);
+ }
+
+ .projects .media-element > img{
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+ }
+
+ .projects .snaps-inline{
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--spacer, 1rem);
+ }
+
+ .projects .snaps-inline > *{
+  scroll-snap-align: start;
+ }
 
 /* Contact Me CSS */
 .contact{

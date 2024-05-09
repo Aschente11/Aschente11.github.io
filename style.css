@@ -308,7 +308,7 @@ section .topic{
 }
 
  .projects .media-scroller{
-  --spacer:1rem;
+  --spacer:3rem;
   display:grid;
   gap: var(--spacer);
   grid-auto-flow: column;
@@ -336,7 +336,7 @@ section .topic{
 }
 
 .projects .media-element > img:hover {
-  transform: scaleX(1.1); /* Scale the image horizontally by 10% on hover */
+  transform: scale(1.1); /* Scale the image horizontally by 10% on hover */
 }
 
  .projects .snaps-inline{

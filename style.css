@@ -224,45 +224,50 @@ section .topic{
   color: #38220f;
   font-size: 25px;
   font-weight: 500;
-  
 }
 
 
-/* Skills CSS */
 .skills{
-    background: #faf0d9;
+  background: #faf0d9;
+  padding: 20px 0; /* Add padding to the skills section */
 }
+
 .skills .boxes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .skills .boxes .box{
-    margin: 20px 0;
-    width: calc(100% / 3 - 20px);
-    text-align: center;
-    border-radius: 12px;
-    padding: 30px 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
-    cursor: default;
-    transition: all 0.4s ease;
-  }
-  .skills .boxes .box:hover{
-    background: #dcb37b;
-    color: #fff;
-  }
-  .skills .boxes .box .icon{
-    height: 50px;
-    width: 50px;
-    background: #dcb37b;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 18px;
-    color: #fff;
-    margin: 0 auto 10px auto;
-    transition: all 0.4s ease;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Add gap between boxes */
+}
+
+.skills .boxes .box{
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+
+.skills .boxes .box:hover{
+  background: #dcb37b;
+  color: #fff;
+}
+
+.skills .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #dcb37b;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
   .boxes .box:hover .icon{
     background-color: #fff;
     color: #dcb37b;
@@ -277,11 +282,18 @@ section .topic{
     color: #fff;
   }
 
-  .skills span{
-    text-decoration:underline;
+   .skills .boxes .box .details .skill-details{
+    display: none;
+  }
+
+  .skills .boxes .box:hover .skill-details{
+    display: block;
   }
 
   
+  .skills .boxes span{
+    text-decoration:underline;
+  }
 
  /* projects CSS */
  .projects{
@@ -316,11 +328,16 @@ section .topic{
   box-shadow: var(--shadow-2);
  }
 
- .projects .media-element > img{
+ .projects .media-element > img {
   inline-size: 100%;
   aspect-ratio: 8/9;
   object-fit: cover;
- }
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.projects .media-element > img:hover {
+  transform: scaleX(1.1); /* Scale the image horizontally by 10% on hover */
+}
 
  .projects .snaps-inline{
   scroll-snap-type: inline mandatory;
@@ -330,6 +347,7 @@ section .topic{
  .projects .snaps-inline > *{
   scroll-snap-align: start;
  }
+
 
  .projects .button {
   margin: 14px 0;

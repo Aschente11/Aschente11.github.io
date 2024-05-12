@@ -200,30 +200,7 @@ section .content{
 section .title{
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
-}
-section .title span{
-  color: #38220f;
-  font-size: 30px;
-  font-weight: 600;
-  position: relative;
-  padding-bottom: 8px;
-}
-section .title span::before,
-section .title span::after{
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #634832;
-  left: 0;
-  bottom: 0;
-}
-section .title span::after{
-  bottom: -7px;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 15px;
 }
 
 section .topic{
@@ -288,12 +265,36 @@ section .topic{
   scroll-snap-align: start;
  }
 
- #worderland {
-    background: #dcb37b; /* Your desired background color for Worderland Valley */
+ #wonderland {
+    background-image: url('/images/WonderBG.png');
+    background-size: cover;
   }
+
+  #wonderland .project-details {
+    color: #ffb561;
+  }
+
+  #wonderland .content {
+    color: #ffdd00;
+  }
+
+  #wonderland .title{
+    font-size: 40px;
+    color: #ffdd00;
+  }
+
   
   #snakez {
-    background: #abcdef; /* Your desired background color for Snakez */
+    background: #abefb1; /* Your desired background color for Snakez */
+  }
+
+  #snakez .title{
+    color: rgb(65, 65, 255);
+    font-size: 40px;
+  }
+
+  #snakez .content{
+    color: rgb(255, 86, 86);
   }
   
   #tekken {

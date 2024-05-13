@@ -403,12 +403,10 @@ section .topic{
 
 /* Contact Me CSS */
 .contact{
-  padding: 5% 10%;
+  padding: 5%;
   text-align: center;
 }
-.contact .content{
-  margin: 0 auto;
-}
+
 .contact .text{
   width: 80%;
   text-align: center;

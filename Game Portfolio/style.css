@@ -209,6 +209,13 @@ section .topic{
   font-weight: 500;
   
 }
+
+.about .content{
+  background-color: #fff; /* Set the background color for the container */
+  border-radius: 12px; /* Add rounded corners to the container */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  padding: 20px;
+}
   
 
  /* projects CSS */

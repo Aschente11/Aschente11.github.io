@@ -22,13 +22,13 @@
     background: #FFF;
 }
 ::-webkit-scrollbar-thumb {
-    background: #dcb37b;
+    background: #556DE5;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #634832;
+    background: #556DE5;
 }
 
 /* navbar styling */
@@ -41,7 +41,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #634832;
+  background: #556DE5;
   padding: 13px 0;
 }
 nav .navbar{
@@ -57,7 +57,7 @@ nav .navbar .logo a{
   color: #dcb37b;
 }
 nav.sticky .navbar .logo a{
-  color: #ece0d1;
+  color: #FFF;
 }
 nav .navbar .menu{
   display: flex;
@@ -70,7 +70,7 @@ nav .navbar .menu li{
 .navbar .menu a{
   font-size: 18px;
   font-weight: 500;
-  color: #dcb37b;
+  color: #FFF;
   padding: 6px 0;
   transition: all 0.4s ease;
 }
@@ -81,10 +81,10 @@ nav.sticky .menu a{
   color: #FFF;
 }
 nav.sticky .menu a:hover{
-  color: #dcb37b;
+  color: #556DE5;
 }
 .navbar .media-icons a{
-  color: #dcb37b;
+  color: #FFF;
   font-size: 18px;
   margin: 0 6px;
 }
@@ -105,7 +105,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #634832;
+  color: #556DE5;
 }
 nav.sticky .menu-btn{
   color: #FFF;
@@ -172,20 +172,30 @@ nav.sticky .menu-btn{
   background-color: #fff;
   color: #dcb37b;
 }
-
+.main-bg {
+  background-image: url('/images/MainBG.jpg');
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Set height to cover the entire content */
+  min-height: 100vh;
+  /* You can adjust padding or margin as needed */
+  padding-top: 40px; /* Same as the padding-top of the first section */
+  padding-bottom: 5%; /* Adjust as needed */
+}
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section{
   padding-top: 40px;
-  background-color: #dcb37b;
   padding-bottom: 40px;
 }
 section .content{
   width: 80%;
-  margin: 40px auto;
+  margin: 20px auto;
   font-family: 'Poppins', sans-serif;
+  color: #FFF;
 }
 .about .about-details{
   width: 90%;
@@ -203,11 +213,11 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #38220f;
+  color: #FFF;
   font-size: 30px;
   font-weight: 600;
   position: relative;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 section .title span::before,
 section .title span::after{
@@ -215,7 +225,7 @@ section .title span::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #634832;
+  background: #556DE5;
   left: 0;
   bottom: 0;
 }
@@ -227,14 +237,35 @@ section .title span::after{
 }
 
 section .topic{
-  color: #38220f;
+  color: #556DE5;
   font-size: 25px;
   font-weight: 500;
+  padding-bottom: 15px;
 }
 
+.about .topic{
+  text-decoration: underline;
+}
+
+.about .content{
+  color: #FFF;
+}
+
+.section-container {
+  background-color: #1B1D2A; /* Set background color for the container */
+  border-radius: 15px; /* Add border radius for rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); /* Add shadow for depth */
+  padding: 5px; /* Add padding to create space between content and container edges */
+  padding-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+/*skills section*/
 
 .skills{
-  background: #faf0d9;
   padding: 20px 0; /* Add padding to the skills section */
 }
 
@@ -257,14 +288,14 @@ section .topic{
 }
 
 .skills .boxes .box:hover{
-  background: #dcb37b;
+  background: #556DE5;
   color: #fff;
 }
 
 .skills .boxes .box .icon{
   height: 50px;
   width: 50px;
-  background: #dcb37b;
+  background: #556DE5;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -276,7 +307,7 @@ section .topic{
 
   .boxes .box:hover .icon{
     background-color: #fff;
-    color: #dcb37b;
+    color: #556DE5;
   }
   .skills .boxes .box:hover .topic,
   .skills .boxes .box:hover p{
@@ -302,9 +333,6 @@ section .topic{
   }
 
  /* projects CSS */
- .projects{
-   background: #dcb37b;
- }
 
  .projects .content {
   display: flex;
@@ -354,7 +382,6 @@ section .topic{
   scroll-snap-align: start;
  }
 
-
  .projects .button {
   margin: 14px 0;
   width: 300px;
@@ -362,21 +389,20 @@ section .topic{
   border-radius: 6px;
   font-size: 17px;
   font-weight: 400;
-  background: #38220f;
+  background: #556DE5;
   color: #FFF;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
 .projects .button:hover {
-  border-color: #dcb37b;
+  border-color: #556DE5;
   background-color: #fff;
-  color: #dcb37b;
+  color: #556DE5;
 }
 
 /* Contact Me CSS */
 .contact{
-  background: #faf0d9;
   padding: 5% 10%;
   text-align: center;
 }

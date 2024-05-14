@@ -11,7 +11,6 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-
 }
 
 // Side NavIgation Menu JS Code
@@ -43,3 +42,11 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+
+// Click-to-expand functionality
+let expandableBoxes = document.querySelectorAll(".box.expandable");
+expandableBoxes.forEach(box => {
+  box.addEventListener("click", function() {
+    this.classList.toggle("expanded");
+  });
+});

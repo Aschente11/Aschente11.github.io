@@ -43,10 +43,3 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
-// Click-to-expand functionality
-let expandableBoxes = document.querySelectorAll(".box.expandable");
-expandableBoxes.forEach(box => {
-  box.addEventListener("click", function() {
-    this.classList.toggle("expanded");
-  });
-});
